@@ -8,9 +8,10 @@ export default function Navbar() {
       <div className="space-x-6 font-semibold">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
-        <Link to="/academy">Academy</Link>
+        <Link to="/academy">Creditor Academy</Link>
         <Link to="/shop">Shop</Link>
         <Link to="/marketplace">Marketplace</Link>
+        <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </div>
     </nav>

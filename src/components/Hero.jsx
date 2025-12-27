@@ -10,13 +10,18 @@ export default function Hero() {
       </h2>
 
       <p className="max-w-2xl mx-auto text-lg mb-8">
-        Empowering everyone to go after their dreams through services,
-        education, and opportunity.
+        Empowering everyone to go after their dreams through education,
+        services, and opportunity.
       </p>
 
-      <button className="bg-primary text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition">
-        Get Started
-      </button>
+      <div className="flex justify-center gap-4">
+        <button className="bg-primary text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition">
+          Get Started
+        </button>
+        <button className="bg-dark text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition">
+          Explore Services
+        </button>
+      </div>
     </section>
   );
 }

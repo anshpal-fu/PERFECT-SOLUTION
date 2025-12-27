@@ -4,11 +4,11 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Get in Touch
+            Contact Us
           </h1>
           
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have questions or ready to get started? Reach out to us and we'll get back to you as soon as possible.
+            We'd love to hear from you. Reach out to Perfect Solution for inquiries, collaborations, or support.
           </p>
         </div>
         
@@ -103,7 +103,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Email</h3>
-                    <p className="text-gray-600">(Coming Soon)</p>
+                    <p className="text-gray-600">Business Email (Coming Soon)</p>
                   </div>
                 </div>
                 
@@ -129,7 +129,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Office</h3>
                     <p className="text-gray-600">
-                      600 1st Ave, Ste 102-2475 <br />
+                      600 1st Ave, Ste 102 – 2475 <br />
                       Seattle, WA 98104
                     </p>
                   </div>
@@ -141,6 +141,11 @@ export default function Contact() {
               <h3 className="text-xl font-bold mb-4">Business Hours</h3>
               <p className="mb-2">Monday - Friday: 9:00 AM - 6:00 PM</p>
               <p>Saturday - Sunday: Closed</p>
+            </div>
+            
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Social Media</h3>
+              <p className="text-gray-600">Facebook | Instagram | TikTok | YouTube</p>
             </div>
           </div>
         </div>
