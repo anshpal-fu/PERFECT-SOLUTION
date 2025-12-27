@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-import Academy from "./pages/Academy";
+import CreditorAcademy from "./pages/Academy";
 import Shop from "./pages/Shop";
 import Marketplace from "./pages/Marketplace";
 import About from "./pages/About";
@@ -20,7 +20,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/academy" element={<Academy />} />
+          <Route path="/academy" element={<CreditorAcademy />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/about" element={<About />} />
