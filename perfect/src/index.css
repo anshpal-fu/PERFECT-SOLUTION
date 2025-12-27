@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Custom theme variables */
+:root {
+  --color-primary: #E10600;   /* McDonald's red */
+  --color-secondary: #FFC72C;
+  --color-dark: #111111;
+}
+
+/* Custom utilities using Tailwind v4 */
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  .bg-dark {
+    background-color: var(--color-dark);
+  }
+}
