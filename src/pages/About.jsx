@@ -82,8 +82,13 @@ export default function About() {
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card">
-                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700">
-                  Credit Education
+                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700 relative">
+                  <img 
+                    src="/empr.jpg" 
+                    alt="" 
+                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                  />
+                  
                 </div>
                 <div className="p-6 bg-white">
                   <span className="inline-block bg-secondary text-primary px-3 py-1 rounded-full text-sm font-bold mb-3 uppercase">EDUCATION</span>
@@ -92,9 +97,13 @@ export default function About() {
               </div>
               
               <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card">
-                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700">
-                  Financial Services
-                </div>
+                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700 relative">
+                  <img 
+                    src="/empr.jpg" 
+                    alt="Financial Services" 
+                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                  />
+                   </div>
                 <div className="p-6 bg-white">
                   <span className="inline-block bg-secondary text-primary px-3 py-1 rounded-full text-sm font-bold mb-3 uppercase">SERVICES</span>
                   <h3 className="text-2xl font-bold text-gray-800 mb-2 uppercase">Business & Financial</h3>
@@ -102,9 +111,14 @@ export default function About() {
               </div>
               
               <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card">
-                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700">
-                  Food Business
-                </div>
+                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700 relative">
+                  <img 
+                    src="/empr.jpg" 
+                    alt="Food Business" 
+                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                  />
+                  
+                  </div>
                 <div className="p-6 bg-white">
                   <span className="inline-block bg-secondary text-primary px-3 py-1 rounded-full text-sm font-bold mb-3 uppercase">BUSINESS</span>
                   <h3 className="text-2xl font-bold text-gray-800 mb-2 uppercase">Kingdom Side Dishes</h3>
