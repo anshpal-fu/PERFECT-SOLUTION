@@ -35,10 +35,10 @@ export default function Services() {
           <div className="bg-white rounded-2xl shadow-xl p-8 kiosk-card balloon-cluster">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, i) => (
-                <div key={i} className="bg-white rounded-2xl p-8 shadow-lg border-2 border-secondary hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card text-center">
+                <div key={i} className="bg-white rounded-2xl p-8 shadow-lg border-2 border-secondary hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card flex flex-col text-center h-full">
                 <div className="text-4xl font-extrabold text-primary mb-4">{i + 1}</div>
                 <h3 className="text-2xl font-bold text-primary mb-4 uppercase">{service}</h3>
-                <p className="text-gray-800 mb-4 font-medium">Comprehensive service with education and support.</p>
+                <p className="text-gray-800 mb-4 font-medium flex-grow">Comprehensive service with education and support.</p>
                 <button className="w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                   Learn More
                 </button>
