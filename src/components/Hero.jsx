@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute bottom-1/3 right-1/3 w-12 h-12 rounded-full bg-white opacity-30"></div>
       
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="bg-white kiosk-card p-10 inline-block max-w-4xl balloon-cluster">
+        <div className=" kiosk-card p-10 inline-block max-w-4xl balloon-cluster">
           <h1 className="text-5xl md:text-6xl font-extrabold text-secondary mb-4">
             Every Perfect Idea Comes with
           </h1>
@@ -17,7 +17,7 @@ export default function Hero() {
             One Perfect Thought at a Time
           </h2>
 
-          <p className="max-w-2xl mx-auto text-lg md:text-xl mb-8 text-gray-700 font-medium">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl mb-8 text-white-400 font-medium">
             Empowering everyone to go after their dreams through education,
             services, and opportunity.
           </p>

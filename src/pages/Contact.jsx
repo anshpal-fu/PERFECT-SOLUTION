@@ -2,9 +2,9 @@
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-primary">
+    <div className="min-h-screen bg-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 text-center kiosk-card balloon-cluster">
+        <div className=" rounded-2xl  p-8 mb-8 text-center kiosk-card balloon-cluster">
           <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-4 uppercase">
             Contact Us
           </h1>
@@ -154,7 +154,7 @@ export default function Contact() {
       </div>
       
       {/* CTA Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-primary">
         <div className="max-w-4xl mx-auto">
           <div className="bg-primary rounded-2xl shadow-xl p-8 text-center kiosk-card balloon-cluster">
             <h2 className="text-4xl font-bold text-white mb-4 uppercase">

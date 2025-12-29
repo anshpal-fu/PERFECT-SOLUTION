@@ -15,7 +15,7 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-primary">
       {/* Hero Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-primary">
         <div className="max-w-6xl mx-auto">
           <div className="bg-primary rounded-2xl shadow-xl p-8 text-center kiosk-card balloon-cluster">
             <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 uppercase">
@@ -30,15 +30,15 @@ export default function Services() {
       </section>
       
       {/* Services Grid */}
-      <section className="py-16 px-6 bg-primary">
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-secondary kiosk-card balloon-cluster">
+          <div className="bg-white rounded-2xl shadow-xl p-8 kiosk-card balloon-cluster">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, i) => (
-                <div key={i} className="bg-primary rounded-2xl p-8 shadow-lg border-2 border-secondary hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card">
-                <div className="text-4xl font-extrabold text-white mb-4">{i + 1}</div>
-                <h3 className="text-2xl font-bold text-white mb-4 uppercase">{service}</h3>
-                <p className="text-white mb-4 font-medium">Comprehensive service with education and support.</p>
+                <div key={i} className="bg-white rounded-2xl p-8 shadow-lg border-2 border-secondary hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card text-center">
+                <div className="text-4xl font-extrabold text-primary mb-4">{i + 1}</div>
+                <h3 className="text-2xl font-bold text-primary mb-4 uppercase">{service}</h3>
+                <p className="text-gray-800 mb-4 font-medium">Comprehensive service with education and support.</p>
                 <button className="w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                   Learn More
                 </button>
@@ -50,7 +50,7 @@ export default function Services() {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-primary">
         <div className="max-w-4xl mx-auto">
           <div className="bg-primary rounded-2xl shadow-xl p-8 text-center kiosk-card balloon-cluster">
             <h2 className="text-4xl font-bold text-white mb-4 uppercase">

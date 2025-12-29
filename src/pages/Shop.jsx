@@ -4,7 +4,7 @@ export default function Shop() {
   const products = ["Mac & Cheese", "Fried Rice", "Kingdom Greens"];
 
   return (
-    <div className="min-h-screen bg-primary">
+    <div className="min-h-screen bg-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 kiosk-card balloon-cluster">
           <h1 className="text-4xl font-bold text-secondary mb-6 text-center uppercase">
@@ -32,7 +32,7 @@ export default function Shop() {
           </div>
         </div>
         
-        <div className="mb-8">
+        <section className="mb-8 ">
           <h2 className="text-3xl font-bold text-secondary mb-6 text-center uppercase">Our Menu</h2>
           
           <div className="grid md:grid-cols-3 gap-6">
@@ -46,11 +46,11 @@ export default function Shop() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       </div>
       
       {/* CTA Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-primary">
         <div className="max-w-4xl mx-auto">
           <div className="bg-primary rounded-2xl shadow-xl p-8 text-center kiosk-card balloon-cluster">
             <h2 className="text-4xl font-bold text-white mb-4 uppercase">

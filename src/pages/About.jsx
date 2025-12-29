@@ -1,12 +1,9 @@
-
-
 export default function About() {
   return (
     <div className="min-h-screen bg-primary">
       {/* About Section */}
       <section className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-primary rounded-2xl shadow-xl p-8 kiosk-card balloon-cluster">
+        <div className="bg-primary rounded-2xl shadow-xl p-8 kiosk-card balloon-cluster">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className=" w-full h-80 md:h-96 flex items-center justify-center text-gray-800 p-4 ">
                 <img src="/about.jpg" 
@@ -45,45 +42,41 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
       </section>
       
       {/* Values Section */}
       <section className="py-16 px-6 bg-primary">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-secondary kiosk-card balloon-cluster">
+        <div className=" shadow-xl p-8   kiosk-card balloon-cluster">
             <h2 className="text-4xl font-bold text-center text-secondary mb-12 uppercase">
               Our Core Values
             </h2>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-primary rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
-                <div className="text-5xl font-extrabold text-white mb-4">1</div>
-                <h3 className="text-2xl font-bold text-white mb-3 uppercase">Empowerment</h3>
-                <p className="text-white">Building confidence through knowledge and opportunity</p>
+              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
+                <div className="text-5xl font-extrabold text-primary mb-4">1</div>
+                <h3 className="text-2xl font-bold text-primary mb-3 uppercase">Empowerment</h3>
+                <p className="text-gray-800">Building confidence through knowledge and opportunity</p>
               </div>
               
-              <div className="bg-primary rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
-                <div className="text-5xl font-extrabold text-white mb-4">2</div>
-                <h3 className="text-2xl font-bold text-white mb-3 uppercase">Education</h3>
-                <p className="text-white">Providing tools for financial literacy and growth</p>
+              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
+                <div className="text-5xl font-extrabold text-primary mb-4">2</div>
+                <h3 className="text-2xl font-bold text-primary mb-3 uppercase">Education</h3>
+                <p className="text-gray-800">Providing tools for financial literacy and growth</p>
               </div>
               
-              <div className="bg-primary rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
-                <div className="text-5xl font-extrabold text-white mb-4">3</div>
-                <h3 className="text-2xl font-bold text-white mb-3 uppercase">Growth</h3>
-                <p className="text-white">Fostering personal and professional development</p>
+              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
+                <div className="text-5xl font-extrabold text-primary mb-4">3</div>
+                <h3 className="text-2xl font-bold text-primary mb-3 uppercase">Growth</h3>
+                <p className="text-gray-800">Fostering personal and professional development</p>
               </div>
             </div>
           </div>
-        </div>
       </section>
       
       {/* Topics Section */}
       <section className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-primary rounded-2xl shadow-xl p-8 border-2 border-secondary kiosk-card balloon-cluster">
-            <h2 className="text-4xl font-bold text-center text-white mb-12 uppercase">
+        <div className="p-8  kiosk-card balloon-cluster">
+            <h2 className="text-4xl font-bold text-center text-black mb-12 uppercase">
               What We Focus On
             </h2>
             
@@ -125,13 +118,11 @@ export default function About() {
               </button>
             </div>
           </div>
-        </div>
       </section>
       
       {/* CTA Section */}
       <section className="py-16 px-6 bg-primary">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8 text-center kiosk-card balloon-cluster">
+        <div className=" rounded-2xl shadow-xl p-8 text-center kiosk-card balloon-cluster">
             <h2 className="text-4xl font-bold text-secondary mb-4 uppercase">
               Ready to Learn More?
             </h2>
@@ -149,10 +140,8 @@ export default function About() {
               </button>
             </div>
           </div>
-        </div>
       </section>
       
-
     </div>
   );
 }

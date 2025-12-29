@@ -56,7 +56,7 @@ export default function Home() {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-primary">
         <div className="max-w-4xl mx-auto">
           <div className="bg-primary rounded-2xl shadow-2xl p-12 text-center border-2 border-secondary kiosk-card balloon-cluster">
             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
