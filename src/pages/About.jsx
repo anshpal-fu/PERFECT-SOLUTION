@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-primary">
       {/* About Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-primary">
         <div className="bg-primary rounded-2xl shadow-xl p-8 kiosk-card balloon-cluster">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className=" w-full h-80 md:h-96 flex items-center justify-center text-gray-800 p-4 ">
@@ -87,7 +87,7 @@ export default function About() {
                 </div>
                 <div className="p-6 bg-white">
                   <span className="inline-block bg-secondary text-primary px-3 py-1 rounded-full text-sm font-bold mb-3 uppercase">EDUCATION</span>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2 uppercase">Creditor Academy</h3>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 uppercase">Education Services </h3>
                 </div>
               </div>
               

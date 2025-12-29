@@ -36,7 +36,7 @@ export default function Home() {
             
             <div className="grid md:grid-cols-3 gap-8">
               {
-                ["Creditor Academy", "Business & Financial Services", "Kingdom Side Dishes"].map((item, i) => (
+                ["Education Services", "Business & Financial Services", "Kingdom Side Dishes"].map((item, i) => (
                   <div
                     key={i}
                     className="bg-primary rounded-2xl p-10 shadow-xl border-2 border-secondary text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card"
