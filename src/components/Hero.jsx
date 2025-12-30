@@ -9,15 +9,15 @@ export default function Hero() {
       
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="p-10 inline-block max-w-4xl balloon-cluster">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-secondary mb-4">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4">
             Every Perfect Idea Comes with
           </h1>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             One Perfect Thought at a Time
           </h2>
 
-          <p className="max-w-2xl mx-auto text-lg md:text-xl mb-8 text-white-400 font-medium">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl mb-8 text-white font-medium">
             Empowering everyone to go after their dreams through education,
             services, and opportunity.
           </p>

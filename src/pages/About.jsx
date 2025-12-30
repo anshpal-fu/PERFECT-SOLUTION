@@ -53,6 +53,7 @@ export default function About() {
             
             <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
               <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8  border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-10" style={{backgroundImage: "url('/education.jpg')"}}></div>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
                   <span className="text-5xl font-extrabold text-primary">1</span>
                 </div>
@@ -64,6 +65,7 @@ export default function About() {
               </div>
               
               <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8 border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-10" style={{backgroundImage: "url('/financial.jpg')"}}></div>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
                   <span className="text-5xl font-extrabold text-primary">2</span>
                 </div>
@@ -75,6 +77,7 @@ export default function About() {
               </div>
               
               <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8  border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-10" style={{backgroundImage: "url('/IMG_20251226_181042.jpg')"}}></div>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
                   <span className="text-5xl font-extrabold text-primary">3</span>
                 </div>
