@@ -34,18 +34,18 @@ export default function Home() {
               Our Core Services
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               {
                 ["Education Services", "Business & Financial Services", "Kingdom Side Dishes"].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-primary rounded-2xl p-10  border-secondary text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card relative overflow-hidden flex flex-col justify-between min-h-[350px]"
+                    className="bg-primary rounded-2xl p-6 sm:p-8 md:p-10  border-secondary text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card relative overflow-hidden flex flex-col justify-between min-h-[250px] sm:min-h-[300px] md:min-h-[350px]"
                   >
                     {(item === "Education Services" || item === "Business & Financial Services" || item === "Kingdom Side Dishes") && (
                       <img 
                         src={item === "Education Services" ? "/education.jpg" : item === "Business & Financial Services" ? "/financial.jpg" : "/IMG_20251226_181042.jpg"} 
                         alt={item === "Education Services" ? "Education Services" : item === "Business & Financial Services" ? "Business & Financial Services" : "Kingdom Side Dishes"} 
-                        className="absolute inset-0 w-full h-full object-cover opacity-80"
+                        className="absolute inset-0 w-full h-full object-cover opacity-50"
                       />
                     )}
                     <div className="relative z-10 flex-grow">

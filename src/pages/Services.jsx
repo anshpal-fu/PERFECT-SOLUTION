@@ -18,11 +18,11 @@ export default function Services() {
       <section className="py-16 px-6 bg-primary">
         <div className="max-w-6xl mx-auto">
           <div className="bg-primary rounded-2xl p-8 text-center balloon-cluster">
-            <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 uppercase">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-6 uppercase">
               Our Services
             </h1>
             
-            <p className="text-xl text-white max-w-3xl mx-auto mb-6 leading-relaxed font-medium">
+            <p className="text-base sm:text-lg text-white max-w-3xl mx-auto mb-4 sm:mb-6 leading-relaxed font-medium">
               We provide a wide range of services designed to help individuals grow financially, personally, and professionally. Each service is delivered with transparency, education, and long-term value in mind.
             </p>
           </div>
@@ -33,13 +33,13 @@ export default function Services() {
       <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-2xl p-8 balloon-cluster">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {services.map((service, i) => (
-                <div key={i} className="bg-white rounded-2xl p-8  border-secondary hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card flex flex-col text-center h-full">
-                <div className="text-4xl font-extrabold text-primary mb-4">{i + 1}</div>
-                <h3 className="text-2xl font-bold text-primary mb-4 uppercase">{service}</h3>
-                <p className="text-gray-800 mb-4 font-medium flex-grow">Comprehensive service with education and support.</p>
-                <button className="w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                <div key={i} className="bg-white rounded-2xl p-6 sm:p-8  border-secondary hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card flex flex-col text-center h-full">
+                <div className="text-3xl sm:text-4xl font-extrabold text-primary mb-3 sm:mb-4">{i + 1}</div>
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3 sm:mb-4 uppercase">{service}</h3>
+                <p className="text-gray-800 mb-3 sm:mb-4 font-medium flex-grow">Comprehensive service with education and support.</p>
+                <button className="w-full bg-secondary text-primary py-2 sm:py-3 px-4 sm:px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                   Learn More
                 </button>
               </div>

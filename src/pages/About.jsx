@@ -4,19 +4,19 @@ export default function About() {
       {/* About Section */}
       <section className="py-16 px-6 bg-white">
         <div className="bg-white rounded-2xl p-6 balloon-cluster">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className=" w-full h-80 md:h-96 flex items-center justify-center text-gray-800 p-4 ">
+            <div className="grid grid-cols-1 gap-6 sm:gap-8 items-center">
+              <div className=" w-full h-64 sm:h-72 md:h-96 flex items-center justify-center text-gray-800 p-4 ">
                 <img src="/about.jpg" 
                 alt=""
                 className="w-full h-full object-cover" />
               </div>
               
               <div className="text-center md:text-left">
-                <h1 className="text-5xl md:text-6xl font-extrabold text-red mb-6 uppercase">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-red mb-4 sm:mb-6 uppercase">
                   About Perfect Solution
                 </h1>
                 
-                <p className="text-lg text-white mb-8 leading-relaxed font-medium">
+                <p className="text-base sm:text-lg text-white mb-6 sm:mb-8 leading-relaxed font-medium">
                   We're on a mission to empower everyone to go after their dreams by offering services, sharing information, and creating opportunities for growth.
                 </p>
                 
@@ -45,50 +45,46 @@ export default function About() {
       </section>
       
       {/* Values Section */}
-      <section className="py-16 px-6 bg-primary">
-        <div className="bg-primary rounded-2xl p-8  border-secondary  balloon-cluster">
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className=" rounded-2xl p-12  border-secondary balloon-cluster">
             <h2 className="text-4xl font-bold text-center text-secondary mb-12 uppercase">
               Our Core Values
             </h2>
             
-            <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
-              <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8  border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
-                <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-10" style={{backgroundImage: "url('/education.jpg')"}}></div>
-                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
-                  <span className="text-5xl font-extrabold text-primary">1</span>
-                </div>
-                <div className="relative z-10">
-                  <h3 className="text-2xl font-bold text-primary mb-4 uppercase">Empowerment</h3>
-                  <p className="text-gray-800 mb-6">Building confidence through knowledge and opportunity</p>
-                  <div className="h-1 w-16 bg-secondary rounded-full"></div>
-                </div>
-              </div>
-              
-              <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8 border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
-                <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-10" style={{backgroundImage: "url('/financial.jpg')"}}></div>
-                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
-                  <span className="text-5xl font-extrabold text-primary">2</span>
-                </div>
-                <div className="relative z-10">
-                  <h3 className="text-2xl font-bold text-primary mb-4 uppercase">Education</h3>
-                  <p className="text-gray-800 mb-6">Providing tools for financial literacy and growth</p>
-                  <div className="h-1 w-16 bg-secondary rounded-full"></div>
-                </div>
-              </div>
-              
-              <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8  border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
-                <div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-10" style={{backgroundImage: "url('/IMG_20251226_181042.jpg')"}}></div>
-                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
-                  <span className="text-5xl font-extrabold text-primary">3</span>
-                </div>
-                <div className="relative z-10">
-                  <h3 className="text-2xl font-bold text-primary mb-4 uppercase">Growth</h3>
-                  <p className="text-gray-800 mb-6">Fostering personal and professional development</p>
-                  <div className="h-1 w-16 bg-secondary rounded-full"></div>
-                </div>
-              </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {
+                ["Empowerment", "Education", "Growth"].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-primary rounded-2xl p-10  border-secondary text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card relative overflow-hidden flex flex-col justify-between min-h-[300px]"
+                  >
+                    {(item === "Empowerment" || item === "Education" || item === "Growth") && (
+                      <img 
+                        src={item === "Empowerment" ? "/education.jpg" : item === "Education" ? "/financial.jpg" : "/IMG_20251226_181042.jpg"} 
+                        alt={item === "Empowerment" ? "Empowerment" : item === "Education" ? "Education" : "Growth"} 
+                        className="absolute inset-0 w-full h-full object-cover opacity-20"
+                      />
+                    )}
+                    <div className="relative z-10 flex-grow">
+                      <h3 className="text-2xl font-bold text-white mb-4 uppercase">{item}</h3>
+                      <p className="text-white mb-4 font-medium">
+                        {item === "Empowerment" && "Building confidence through knowledge and opportunity"}
+                        {item === "Education" && "Providing tools for financial literacy and growth"}
+                        {item === "Growth" && "Fostering personal and professional development"}
+                      </p>
+                    </div>
+                    <div className="relative z-10">
+                      <button className="w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
+        </div>
       </section>
       
       {/* Topics Section */}
@@ -98,9 +94,9 @@ export default function About() {
               What We Focus On
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card">
-                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700 relative">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8">
+              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card mb-6 sm:mb-0">
+                <div className="bg-white border-2 border-dashed w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
                   <img 
                     src="/education.jpg" 
                     alt="Education Services" 
@@ -110,12 +106,12 @@ export default function About() {
                 </div>
                 <div className="p-6 bg-white">
                   <span className="inline-block bg-secondary text-primary px-3 py-1 rounded-full text-sm font-bold mb-3 uppercase">EDUCATION</span>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2 uppercase">Education Services </h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 uppercase">Education Services </h3>
                 </div>
               </div>
               
-              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card">
-                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700 relative">
+              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card mb-6 sm:mb-0">
+                <div className="bg-white border-2 border-dashed w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
                   <img 
                     src="/empr.jpg" 
                     alt="Financial Services" 
@@ -124,12 +120,12 @@ export default function About() {
                    </div>
                 <div className="p-6 bg-white">
                   <span className="inline-block bg-secondary text-primary px-3 py-1 rounded-full text-sm font-bold mb-3 uppercase">SERVICES</span>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2 uppercase">Business & Financial</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 uppercase">Business & Financial</h3>
                 </div>
               </div>
               
-              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card">
-                <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700 relative">
+              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card mb-6 sm:mb-0">
+                <div className="bg-white border-2 border-dashed w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
                   <img 
                     src="/empr.jpg" 
                     alt="Food Business" 
@@ -139,7 +135,7 @@ export default function About() {
                   </div>
                 <div className="p-6 bg-white">
                   <span className="inline-block bg-secondary text-primary px-3 py-1 rounded-full text-sm font-bold mb-3 uppercase">BUSINESS</span>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2 uppercase">Kingdom Side Dishes</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 uppercase">Kingdom Side Dishes</h3>
                 </div>
               </div>
             </div>
