@@ -1,7 +1,7 @@
 import ProductCard from "../components/ProductCard";
 
 export default function Shop() {
-  const products = ["Mac & Cheese", "Fried Rice", "Kingdom Greens"];
+  const products = ["Kingdom Yams", "Kingdom Potato Salad", "Kingdom Mac & Cheese", "Kingdom Greens & String Beans"];
 
   return (
     <div className="min-h-screen bg-white">
@@ -38,8 +38,11 @@ export default function Shop() {
           <div className="grid md:grid-cols-3 gap-6">
             {products.map((item, i) => (
               <div key={i} className="bg-primary rounded-2xl p-6  border-secondary kiosk-card">
-                <h3 className="text-xl font-bold text-center text-white mb-4 uppercase">{item}</h3>
-                <p className="text-white text-center mb-4 font-medium">Delicious and made with quality ingredients</p>
+                <h3 className="text-xl font-bold text-center text-white mb-2 uppercase">{item}</h3>
+                <p className="text-white text-center text-sm mb-4 font-medium">Delicious and made with quality ingredients</p>
+                <div className="text-center mb-4">
+                  <span className="text-2xl font-bold text-secondary">${i === 0 || i === 1 ? '60' : i === 2 ? '8.99' : '7.99'}</span>
+                </div>
                 <button className="w-full bg-secondary text-primary py-2 px-4 rounded-xl font-bold uppercase hover:bg-white hover:text-primary transition">
                   Add to Order
                 </button>
