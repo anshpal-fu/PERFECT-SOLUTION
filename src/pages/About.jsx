@@ -99,8 +99,8 @@ export default function About() {
               <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card">
                 <div className="bg-white border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-700 relative">
                   <img 
-                    src="/empr.jpg" 
-                    alt="" 
+                    src="/education.jpg" 
+                    alt="Education Services" 
                     className="absolute inset-0 w-full h-full object-cover opacity-70"
                   />
                   

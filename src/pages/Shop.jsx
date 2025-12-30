@@ -6,7 +6,9 @@ export default function Shop() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <section className="bg-red rounded-2xl  p-8 mb-8 balloon-cluster">
+        <section className="bg-primary py-16 balloon-cluster">
+          <div className="max-w-6xl mx-auto px-6">
+          <div className="bg-primary rounded-2xl p-8 border-2 border-secondary kiosk-card">
           <h1 className="text-4xl font-bold text-secondary mb-6 text-center uppercase">
             Kingdom Side Dishes
           </h1>
@@ -21,7 +23,7 @@ export default function Shop() {
             </div>
             
             <div className="text-center md:text-left">
-              <p className="text-lg text-gray-700 mb-6 font-medium">
+              <p className="text-lg text-white mb-6 font-medium">
                 Our Kingdom Side Dishes are crafted with care and purpose. We believe food brings people together, and our dishes reflect quality, consistency, and community.
               </p>
               
@@ -30,20 +32,22 @@ export default function Shop() {
               </button>
             </div>
           </div>
+          </div>
+          </div>
         </section>
         
-        <section className="mb-8 bg-white">
-          <h2 className="text-3xl font-bold text-secondary mb-6 text-center uppercase">Our Menu</h2>
+        <section className="mb-8 bg-white rounded-2xl p-8  border-secondary  balloon-cluster">
+          <h2 className="text-3xl font-bold text-secondary mb-8 text-center uppercase">Our Menu</h2>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((item, i) => (
-              <div key={i} className="bg-primary rounded-2xl p-6  border-secondary kiosk-card">
-                <h3 className="text-xl font-bold text-center text-white mb-2 uppercase">{item}</h3>
-                <p className="text-white text-center text-sm mb-4 font-medium">Delicious and made with quality ingredients</p>
+              <div key={i} className="bg-white rounded-2xl p-6  border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 kiosk-card flex flex-col min-h-[220px]">
+                <h3 className="text-xl font-bold text-center text-primary mb-2 uppercase">{item}</h3>
+                <p className="text-gray-800 text-center text-sm mb-4 flex-grow font-medium">Delicious and made with quality ingredients</p>
                 <div className="text-center mb-4">
                   <span className="text-2xl font-bold text-secondary">${i === 0 || i === 1 ? '60' : i === 2 ? '8.99' : '7.99'}</span>
                 </div>
-                <button className="w-full bg-secondary text-primary py-2 px-4 rounded-xl font-bold uppercase hover:bg-white hover:text-primary transition">
+                <button className="w-full bg-secondary text-primary py-3 px-4 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition-all duration-300">
                   Add to Order
                 </button>
               </div>

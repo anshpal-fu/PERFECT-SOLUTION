@@ -39,14 +39,24 @@ export default function Home() {
                 ["Education Services", "Business & Financial Services", "Kingdom Side Dishes"].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-primary rounded-2xl p-10  border-secondary text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card"
+                    className="bg-primary rounded-2xl p-10  border-secondary text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card relative overflow-hidden flex flex-col justify-between min-h-[350px]"
                   >
-                    <div className="text-4xl font-extrabold text-white mb-4">{i + 1}</div>
-                    <h3 className="text-2xl font-bold text-white mb-4 uppercase">{item}</h3>
-                    <p className="text-white mb-4 font-medium">Comprehensive solution with education and support.</p>
-                    <button className="w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
-                      Learn More
-                    </button>
+                    {(item === "Education Services" || item === "Business & Financial Services" || item === "Kingdom Side Dishes") && (
+                      <img 
+                        src={item === "Education Services" ? "/education.jpg" : item === "Business & Financial Services" ? "/financial.jpg" : "/IMG_20251226_181042.jpg"} 
+                        alt={item === "Education Services" ? "Education Services" : item === "Business & Financial Services" ? "Business & Financial Services" : "Kingdom Side Dishes"} 
+                        className="absolute inset-0 w-full h-full object-cover opacity-20"
+                      />
+                    )}
+                    <div className="relative z-10 flex-grow">
+                      <h3 className="text-2xl font-bold text-white mb-4 uppercase">{item}</h3>
+                      <p className="text-white mb-4 font-medium">Comprehensive solution with education and support.</p>
+                    </div>
+                    <div className="relative z-10">
+                      <button className="w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                        Learn More
+                      </button>
+                    </div>
                   </div>
                 ))
               }
