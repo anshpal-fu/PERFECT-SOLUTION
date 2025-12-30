@@ -6,10 +6,10 @@ export default function Shop() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <section className="bg-primary py-12 sm:py-16 balloon-cluster">
+        <section className="py-12 sm:py-16 balloon-cluster">
           <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-primary rounded-2xl p-6 sm:p-8 border-2 border-secondary kiosk-card">
-          <h1 className="text-3xl sm:text-4xl font-bold text-secondary mb-4 sm:mb-6 text-center uppercase">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 border-2 border-secondary kiosk-card">
+          <h1 className="text-3xl sm:text-4xl font-bold text-primary mb-4 sm:mb-6 text-center uppercase">
             Kingdom Side Dishes
           </h1>
           
@@ -23,7 +23,7 @@ export default function Shop() {
             </div>
             
             <div className="text-center">
-              <p className="text-base sm:text-lg text-white mb-4 sm:mb-6 font-medium">
+              <p className="text-base sm:text-lg text-gray-800 mb-4 sm:mb-6 font-medium">
                 Our Kingdom Side Dishes are crafted with care and purpose. We believe food brings people together, and our dishes reflect quality, consistency, and community.
               </p>
               
@@ -36,7 +36,7 @@ export default function Shop() {
           </div>
         </section>
         
-        <section className="mb-8 bg-white rounded-2xl p-6 sm:p-8  border-secondary  balloon-cluster">
+        <section className="py-16 px-6 bg-primary rounded-2xl p-6 sm:p-8  border-secondary  balloon-cluster mt-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-secondary mb-6 sm:mb-8 text-center uppercase">Our Menu</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

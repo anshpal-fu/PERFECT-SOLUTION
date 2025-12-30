@@ -2,50 +2,54 @@ export default function About() {
   return (
     <div className="min-h-screen bg-primary">
       {/* About Section */}
-      <section className="py-16 px-6 bg-white">
-        <div className="bg-white rounded-2xl p-6 balloon-cluster">
-            <div className="grid grid-cols-1 gap-6 sm:gap-8 items-center">
-              <div className=" w-full h-64 sm:h-72 md:h-96 flex items-center justify-center text-gray-800 p-4 ">
+      <section className="py-8 px-6 bg-white">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-6 md:p-10 balloon-cluster">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="w-full md:w-1/2">
+              <div className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] flex items-center justify-center text-gray-800 p-4 ">
                 <img src="/about.jpg" 
-                alt=""
-                className="w-full h-full object-cover" />
+                alt="About Perfect Solution"
+                className="w-full h-full object-cover rounded-xl" />
+              </div>
+            </div>
+            
+            <div className="w-full md:w-1/2">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-red mb-4 sm:mb-6 uppercase text-center md:text-left">
+                About Perfect Solution
+              </h1>
+              
+              <p className="text-base sm:text-lg text-black mb-6 sm:mb-8 leading-relaxed font-medium text-center md:text-left">
+                We're on a mission to empower everyone to go after their dreams by offering services, sharing information, and creating opportunities for growth.
+              </p>
+              
+              <div className="space-y-6 mb-8">
+                <div className="bg-white p-6 rounded-2xl text-gray-800 border-2 border-secondary kiosk-card">
+                  <h3 className="text-2xl font-bold text-primary mb-2 uppercase">Our Mission</h3>
+                  <p className="text-gray-800">
+                    To empower everyone to go after their dreams by offering services, sharing information, and creating opportunities for growth.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-2xl text-gray-800 border-2 border-secondary kiosk-card">
+                  <h3 className="text-2xl font-bold text-primary mb-2 uppercase">Our Vision</h3>
+                  <p className="text-gray-800">
+                    We believe every journey starts with one perfect thought. Through education, service, and community, we aim to help individuals build a better future—step by step.
+                  </p>
+                </div>
               </div>
               
               <div className="text-center md:text-left">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-red mb-4 sm:mb-6 uppercase">
-                  About Perfect Solution
-                </h1>
-                
-                <p className="text-base sm:text-lg text-white mb-6 sm:mb-8 leading-relaxed font-medium">
-                  We're on a mission to empower everyone to go after their dreams by offering services, sharing information, and creating opportunities for growth.
-                </p>
-                
-                <div className="space-y-6 mb-8">
-                  <div className="bg-white p-6 rounded-2xl text-gray-800 border-2 border-secondary kiosk-card">
-                    <h3 className="text-2xl font-bold text-primary mb-2 uppercase">Our Mission</h3>
-                    <p className="text-gray-800">
-                      To empower everyone to go after their dreams by offering services, sharing information, and creating opportunities for growth.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-white p-6 rounded-2xl text-gray-800 border-2 border-secondary kiosk-card">
-                    <h3 className="text-2xl font-bold text-primary mb-2 uppercase">Our Vision</h3>
-                    <p className="text-gray-800">
-                      We believe every journey starts with one perfect thought. Through education, service, and community, we aim to help individuals build a better future—step by step.
-                    </p>
-                  </div>
-                </div>
-                
                 <button className="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                   Explore Our Services
                 </button>
               </div>
             </div>
           </div>
+        </div>
       </section>
       
       {/* Values Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-8 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className=" rounded-2xl p-12  border-secondary balloon-cluster">
             <h2 className="text-4xl font-bold text-center text-secondary mb-12 uppercase">
