@@ -45,7 +45,7 @@ export default function Home() {
                       <img 
                         src={item === "Education Services" ? "/education.jpg" : item === "Business & Financial Services" ? "/financial.jpg" : "/IMG_20251226_181042.jpg"} 
                         alt={item === "Education Services" ? "Education Services" : item === "Business & Financial Services" ? "Business & Financial Services" : "Kingdom Side Dishes"} 
-                        className="absolute inset-0 w-full h-full object-cover opacity-20"
+                        className="absolute inset-0 w-full h-full object-cover opacity-80"
                       />
                     )}
                     <div className="relative z-10 flex-grow">
