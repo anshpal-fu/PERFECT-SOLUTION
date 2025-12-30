@@ -8,7 +8,7 @@ export default function Home() {
       {/* Introduction Section */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-primary rounded-2xl shadow-xl p-12 border-2 border-secondary kiosk-card balloon-cluster">
+          <div className="bg-primary rounded-2xl p-12  border-secondary  balloon-cluster">
             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 text-center">
               One Platform. Many Opportunities.
             </h2>
@@ -27,9 +27,9 @@ export default function Home() {
       </section>
       
       {/* Services Overview */}
-      <section className="py-16 px-6 bg-primary">
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-2xl p-12 border-2 border-secondary kiosk-card balloon-cluster">
+          <div className=" rounded-2xl p-12  border-secondary balloon-cluster">
             <h2 className="text-4xl font-bold text-center text-secondary mb-12 uppercase">
               Our Core Services
             </h2>
@@ -39,7 +39,7 @@ export default function Home() {
                 ["Education Services", "Business & Financial Services", "Kingdom Side Dishes"].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-primary rounded-2xl p-10 shadow-xl border-2 border-secondary text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card"
+                    className="bg-primary rounded-2xl p-10  border-secondary text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 kiosk-card"
                   >
                     <div className="text-4xl font-extrabold text-white mb-4">{i + 1}</div>
                     <h3 className="text-2xl font-bold text-white mb-4 uppercase">{item}</h3>
@@ -58,7 +58,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 px-6 bg-primary">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-primary rounded-2xl shadow-2xl p-12 text-center border-2 border-secondary kiosk-card balloon-cluster">
+          <div className="bg-primary rounded-2xl p-12 text-center border-secondary balloon-cluster">
             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
               Ready to Transform Your Future?
             </h2>

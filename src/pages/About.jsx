@@ -2,8 +2,8 @@ export default function About() {
   return (
     <div className="min-h-screen bg-primary">
       {/* About Section */}
-      <section className="py-16 px-6 bg-primary">
-        <div className="bg-primary rounded-2xl shadow-xl p-8 kiosk-card balloon-cluster">
+      <section className="py-16 px-6 bg-white">
+        <div className="bg-white rounded-2xl p-6 balloon-cluster">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className=" w-full h-80 md:h-96 flex items-center justify-center text-gray-800 p-4 ">
                 <img src="/about.jpg" 
@@ -12,7 +12,7 @@ export default function About() {
               </div>
               
               <div className="text-center md:text-left">
-                <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 uppercase">
+                <h1 className="text-5xl md:text-6xl font-extrabold text-red mb-6 uppercase">
                   About Perfect Solution
                 </h1>
                 
@@ -46,28 +46,43 @@ export default function About() {
       
       {/* Values Section */}
       <section className="py-16 px-6 bg-primary">
-        <div className=" shadow-xl p-8   kiosk-card balloon-cluster">
+        <div className="bg-primary rounded-2xl p-8  border-secondary  balloon-cluster">
             <h2 className="text-4xl font-bold text-center text-secondary mb-12 uppercase">
               Our Core Values
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
-                <div className="text-5xl font-extrabold text-primary mb-4">1</div>
-                <h3 className="text-2xl font-bold text-primary mb-3 uppercase">Empowerment</h3>
-                <p className="text-gray-800">Building confidence through knowledge and opportunity</p>
+            <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+              <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8  border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
+                  <span className="text-5xl font-extrabold text-primary">1</span>
+                </div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold text-primary mb-4 uppercase">Empowerment</h3>
+                  <p className="text-gray-800 mb-6">Building confidence through knowledge and opportunity</p>
+                  <div className="h-1 w-16 bg-secondary rounded-full"></div>
+                </div>
               </div>
               
-              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
-                <div className="text-5xl font-extrabold text-primary mb-4">2</div>
-                <h3 className="text-2xl font-bold text-primary mb-3 uppercase">Education</h3>
-                <p className="text-gray-800">Providing tools for financial literacy and growth</p>
+              <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8 border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
+                  <span className="text-5xl font-extrabold text-primary">2</span>
+                </div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold text-primary mb-4 uppercase">Education</h3>
+                  <p className="text-gray-800 mb-6">Providing tools for financial literacy and growth</p>
+                  <div className="h-1 w-16 bg-secondary rounded-full"></div>
+                </div>
               </div>
               
-              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border-2 border-secondary kiosk-card">
-                <div className="text-5xl font-extrabold text-primary mb-4">3</div>
-                <h3 className="text-2xl font-bold text-primary mb-3 uppercase">Growth</h3>
-                <p className="text-gray-800">Fostering personal and professional development</p>
+              <div className="flex-1 min-w-[300px] bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8  border-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary rounded-full -m-16 flex items-center justify-center">
+                  <span className="text-5xl font-extrabold text-primary">3</span>
+                </div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold text-primary mb-4 uppercase">Growth</h3>
+                  <p className="text-gray-800 mb-6">Fostering personal and professional development</p>
+                  <div className="h-1 w-16 bg-secondary rounded-full"></div>
+                </div>
               </div>
             </div>
           </div>

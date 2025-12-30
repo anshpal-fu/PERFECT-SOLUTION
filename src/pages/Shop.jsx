@@ -6,7 +6,7 @@ export default function Shop() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 kiosk-card balloon-cluster">
+        <section className="bg-red rounded-2xl  p-8 mb-8 balloon-cluster">
           <h1 className="text-4xl font-bold text-secondary mb-6 text-center uppercase">
             Kingdom Side Dishes
           </h1>
@@ -30,14 +30,14 @@ export default function Shop() {
               </button>
             </div>
           </div>
-        </div>
+        </section>
         
-        <section className="mb-8 ">
+        <section className="mb-8 bg-white">
           <h2 className="text-3xl font-bold text-secondary mb-6 text-center uppercase">Our Menu</h2>
           
           <div className="grid md:grid-cols-3 gap-6">
             {products.map((item, i) => (
-              <div key={i} className="bg-primary rounded-2xl shadow-lg p-6 border-2 border-secondary kiosk-card">
+              <div key={i} className="bg-primary rounded-2xl p-6  border-secondary kiosk-card">
                 <h3 className="text-xl font-bold text-center text-white mb-4 uppercase">{item}</h3>
                 <p className="text-white text-center mb-4 font-medium">Delicious and made with quality ingredients</p>
                 <button className="w-full bg-secondary text-primary py-2 px-4 rounded-xl font-bold uppercase hover:bg-white hover:text-primary transition">
@@ -51,8 +51,8 @@ export default function Shop() {
       
       {/* CTA Section */}
       <section className="py-16 px-6 bg-primary">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-primary rounded-2xl shadow-xl p-8 text-center kiosk-card balloon-cluster">
+        <div className=" ">
+          <div className="bg-primary p-8 text-center ">
             <h2 className="text-4xl font-bold text-white mb-4 uppercase">
               Order Today
             </h2>
