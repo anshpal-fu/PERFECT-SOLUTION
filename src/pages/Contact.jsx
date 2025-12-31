@@ -29,7 +29,7 @@ export default function Contact() {
                     type="text"
                     id="firstName"
                     className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-secondary rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition bg-white text-sm sm:text-base"
-                    placeholder="John"
+                    placeholder=""
                   />
                 </div>
                 
@@ -41,7 +41,7 @@ export default function Contact() {
                     type="text"
                     id="lastName"
                     className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-secondary rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition bg-white text-sm sm:text-base"
-                    placeholder="Doe"
+                    placeholder=""
                   />
                 </div>
               </div>
@@ -54,7 +54,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-secondary rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition bg-white text-sm sm:text-base"
-                  placeholder="john@example.com"
+                  placeholder=""
                 />
               </div>
               
@@ -66,7 +66,7 @@ export default function Contact() {
                   type="text"
                   id="subject"
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-secondary rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition bg-white text-sm sm:text-base"
-                  placeholder="How can we help?"
+                  placeholder=""
                 />
               </div>
               
@@ -78,7 +78,7 @@ export default function Contact() {
                   id="message"
                   rows="5"
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-secondary rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition bg-white text-sm sm:text-base"
-                  placeholder="Type your message here..."
+                  placeholder=""
                 ></textarea>
               </div>
               

@@ -39,7 +39,7 @@ export default function About() {
               </div>
               
               <div className="text-center md:text-left">
-                <a href="/services" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+                <a href="/services" className="block bg-secondary text-primary px-4 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                   Explore Our Services
                 </a>
               </div>
