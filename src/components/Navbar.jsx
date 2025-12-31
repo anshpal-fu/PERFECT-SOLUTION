@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-primary text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg counter-top">
+    <nav className="bg-primary text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg w-full">
       <h1 className="text-2xl font-extrabold text-secondary">PERFECT SOLUTION</h1>
 
       {/* Desktop Navigation - Hidden on Mobile */}

@@ -18,8 +18,8 @@ export default function Home() {
               Perfect Solution is built to empower individuals and families by providing trusted services, educational resources, and business opportunities—all in one place. Whether you're looking to improve your financial standing, start a business, or learn step-by-step, we're here to support your journey.
             </p>
             
-            <div className="text-center">
-              <Link to="/contact" className="block bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+            <div className="flex justify-center">
+              <Link to="/contact" className="inline-flex items-center justify-center bg-secondary text-primary px-8 py-3 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 Get Started Today
               </Link>
             </div>
