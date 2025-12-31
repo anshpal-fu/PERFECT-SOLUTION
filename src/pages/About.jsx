@@ -2,8 +2,8 @@ export default function About() {
   return (
     <div className="min-h-screen bg-primary">
       {/* About Section */}
-      <section className="py-8 px-6 bg-white">
-        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-6 md:p-10 balloon-cluster">
+      <section className="py-8 px-6 bg-primary">
+        <div className="max-w-5xl mx-auto  rounded-2xl p-6 md:p-10 balloon-cluster">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-full md:w-1/2">
               <div className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] flex items-center justify-center text-gray-800 p-4 ">
@@ -14,23 +14,23 @@ export default function About() {
             </div>
             
             <div className="w-full md:w-1/2">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-red mb-4 sm:mb-6 uppercase text-center md:text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-6 uppercase text-center md:text-left">
                 About Perfect Solution
               </h1>
               
-              <p className="text-base sm:text-lg text-black mb-6 sm:mb-8 leading-relaxed font-medium text-center md:text-left">
+              <p className="text-base sm:text-lg text-white mb-6 sm:mb-8 leading-relaxed font-medium text-center md:text-left">
                 We're on a mission to empower everyone to go after their dreams by offering services, sharing information, and creating opportunities for growth.
               </p>
               
               <div className="space-y-6 mb-8">
-                <div className="bg-white p-6 rounded-2xl text-gray-800 border-2 border-secondary kiosk-card">
+                <div className="bg-white p-6 rounded-2xl text-gray-800 ">
                   <h3 className="text-2xl font-bold text-primary mb-2 uppercase">Our Mission</h3>
                   <p className="text-gray-800">
                     To empower everyone to go after their dreams by offering services, sharing information, and creating opportunities for growth.
                   </p>
                 </div>
                 
-                <div className="bg-white p-6 rounded-2xl text-gray-800 border-2 border-secondary kiosk-card">
+                <div className="bg-white p-6 rounded-2xl text-gray-800 ">
                   <h3 className="text-2xl font-bold text-primary mb-2 uppercase">Our Vision</h3>
                   <p className="text-gray-800">
                     We believe every journey starts with one perfect thought. Through education, service, and community, we aim to help individuals build a better future—step by step.
@@ -39,9 +39,9 @@ export default function About() {
               </div>
               
               <div className="text-center md:text-left">
-                <button className="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+                <a href="/services" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                   Explore Our Services
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -79,9 +79,9 @@ export default function About() {
                       </p>
                     </div>
                     <div className="relative z-10">
-                      <button className="w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                      <a href="/contact" className="block w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                         Learn More
-                      </button>
+                      </a>
                     </div>
                   </div>
                 ))
@@ -99,12 +99,12 @@ export default function About() {
             </h2>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8">
-              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card mb-6 sm:mb-0">
-                <div className="bg-white border-2 border-dashed w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
+              <div className="rounded-2xl overflow-hidden mb-6 sm:mb-0">
+                <div className="bg-white  w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
                   <img 
                     src="/education.jpg" 
                     alt="Education Services" 
-                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                    className="absolute inset-0 w-full h-full "
                   />
                   
                 </div>
@@ -114,12 +114,12 @@ export default function About() {
                 </div>
               </div>
               
-              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card mb-6 sm:mb-0">
-                <div className="bg-white border-2 border-dashed w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
+              <div className="rounded-2xl overflow-hidden  mb-6 sm:mb-0">
+                <div className="bg-white w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
                   <img 
-                    src="/empr.jpg" 
+                    src="/financial.jpg" 
                     alt="Financial Services" 
-                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                    className="absolute inset-0 w-full h-full "
                   />
                    </div>
                 <div className="p-6 bg-white">
@@ -128,12 +128,12 @@ export default function About() {
                 </div>
               </div>
               
-              <div className="rounded-2xl overflow-hidden shadow-lg kiosk-card mb-6 sm:mb-0">
-                <div className="bg-white border-2 border-dashed w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
+              <div className="rounded-2xl overflow-hidden  mb-6 sm:mb-0">
+                <div className="bg-white w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
                   <img 
-                    src="/empr.jpg" 
+                    src="/IMG_20251226_181042.jpg" 
                     alt="Food Business" 
-                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                    className="absolute inset-0 w-full h-full "
                   />
                   
                   </div>
@@ -145,9 +145,9 @@ export default function About() {
             </div>
             
             <div className="text-center">
-              <button className="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+              <a href="/services" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 View More
-              </button>
+              </a>
             </div>
           </div>
       </section>
@@ -164,12 +164,10 @@ export default function About() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+              <a href="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 Get Started
-              </button>
-              <button className="bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-white transition-all transform hover:scale-105 shadow-lg">
-                Contact Us
-              </button>
+              </a>
+             
             </div>
           </div>
       </section>

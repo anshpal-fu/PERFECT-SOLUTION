@@ -39,9 +39,9 @@ export default function Services() {
                 <div className="text-3xl sm:text-4xl font-extrabold text-primary mb-3 sm:mb-4">{i + 1}</div>
                 <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3 sm:mb-4 uppercase">{service}</h3>
                 <p className="text-gray-800 mb-3 sm:mb-4 font-medium flex-grow">Comprehensive service with education and support.</p>
-                <button className="w-full bg-secondary text-primary py-2 sm:py-3 px-4 sm:px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                <a href="/contact" className="block w-full bg-secondary text-primary py-2 sm:py-3 px-4 sm:px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                   Learn More
-                </button>
+                </a>
               </div>
               ))}
             </div>
@@ -62,12 +62,10 @@ export default function Services() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
-                Explore Services
-              </button>
-              <button className="bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-secondary transition-all transform hover:scale-105 shadow-lg">
+              
+              <a href="/contact" className="block bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-secondary transition-all transform hover:scale-105 shadow-lg">
                 Contact Us
-              </button>
+              </a>
             </div>
           </div>
         </div>

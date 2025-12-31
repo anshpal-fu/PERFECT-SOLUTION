@@ -84,7 +84,7 @@ export default function Contact() {
               
               <button
                 type="submit"
-                className="w-full bg-secondary text-primary py-3 sm:py-4 px-4 sm:px-6 rounded-xl font-bold uppercase hover:bg-white hover:text-primary transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl text-sm sm:text-base"
+                className="w-full bg-secondary text-primary py-3 sm:py-4 px-4 sm:px-6 rounded-xl font-bold uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg text-sm sm:text-base"
               >
                 Send Message
               </button>
@@ -166,12 +166,10 @@ export default function Contact() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
-                Send Message
-              </button>
-              <button className="bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-white transition-all transform hover:scale-105 shadow-lg">
-                Call Us
-              </button>
+              
+              <a href="/services" className="block bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary transition-all transform hover:scale-105 shadow-lg">
+                Explore Services
+              </a>
             </div>
           </div>
         </div>

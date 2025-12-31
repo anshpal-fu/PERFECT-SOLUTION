@@ -18,9 +18,9 @@ export default function Home() {
             </p>
             
             <div className="text-center">
-              <button className="bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+              <a href="/contact" className="block bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 Get Started Today
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -53,9 +53,9 @@ export default function Home() {
                       <p className="text-white mb-4 font-medium">Comprehensive solution with education and support.</p>
                     </div>
                     <div className="relative z-10">
-                      <button className="w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                      <a href={item === "Kingdom Side Dishes" ? "/shop" : "/services"} className="block w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                         Learn More
-                      </button>
+                      </a>
                     </div>
                   </div>
                 ))
@@ -78,12 +78,10 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <button className="bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 min-w-[200px]">
+              <a href="/contact" className="block bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 min-w-[200px]">
                 Start Now
-              </button>
-              <button className="bg-white text-primary border-2 border-secondary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-white transition-all transform hover:scale-105 min-w-[200px]">
-                Contact Us
-              </button>
+              </a>
+              
             </div>
           </div>
         </div>
