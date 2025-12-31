@@ -1,4 +1,5 @@
 import ProductCard from "../components/ProductCard";
+import { Link } from "react-router-dom";
 
 export default function Shop() {
   const products = ["Kingdom Yams", "Kingdom Potato Salad", "Kingdom Mac & Cheese", "Kingdom Greens & String Beans"];
@@ -27,9 +28,9 @@ export default function Shop() {
                 Our Kingdom Side Dishes are crafted with care and purpose. We believe food brings people together, and our dishes reflect quality, consistency, and community.
               </p>
               
-              <a href="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 Order Now
-              </a>
+              </Link>
             </div>
           </div>
           </div>
@@ -69,16 +70,14 @@ export default function Shop() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 Order Now
-              </a>
-              
+              </Link>
             </div>
           </div>
         </div>
       </section>
       
-
     </div>
   );
 }

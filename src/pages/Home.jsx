@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -18,9 +19,9 @@ export default function Home() {
             </p>
             
             <div className="text-center">
-              <a href="/contact" className="block bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/contact" className="block bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 Get Started Today
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -53,9 +54,9 @@ export default function Home() {
                       <p className="text-white mb-4 font-medium">Comprehensive solution with education and support.</p>
                     </div>
                     <div className="relative z-10">
-                      <a href={item === "Kingdom Side Dishes" ? "/shop" : "/services"} className="block w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                      <Link to={item === "Kingdom Side Dishes" ? "/shop" : "/services"} className="block w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                         Learn More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 ))
@@ -78,9 +79,9 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="/contact" className="block bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 min-w-[200px]">
+              <Link to="/contact" className="block bg-secondary text-primary px-10 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 min-w-[200px]">
                 Start Now
-              </a>
+              </Link>
               
             </div>
           </div>

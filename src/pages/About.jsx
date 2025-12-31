@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function About() {
   return (
     <div className="min-h-screen bg-primary">
@@ -39,9 +41,9 @@ export default function About() {
               </div>
               
               <div className="text-center md:text-left">
-                <a href="/services" className="block bg-secondary text-primary px-4 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+                <Link to="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                   Explore Our Services
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -145,9 +147,9 @@ export default function About() {
             </div>
             
             <div className="text-center">
-              <a href="/services" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 View More
-              </a>
+              </Link>
             </div>
           </div>
       </section>
@@ -164,9 +166,9 @@ export default function About() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 Get Started
-              </a>
+              </Link>
              
             </div>
           </div>

@@ -1,4 +1,5 @@
 import ServiceCard from "../components/ServiceCard";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   const services = [
@@ -39,9 +40,9 @@ export default function Services() {
                 <div className="text-3xl sm:text-4xl font-extrabold text-primary mb-3 sm:mb-4">{i + 1}</div>
                 <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3 sm:mb-4 uppercase">{service}</h3>
                 <p className="text-gray-800 mb-3 sm:mb-4 font-medium flex-grow">Comprehensive service with education and support.</p>
-                <a href="/contact" className="block w-full bg-secondary text-primary py-2 sm:py-3 px-4 sm:px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                <Link to="/contact" className="block w-full bg-secondary text-primary py-2 sm:py-3 px-4 sm:px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                   Learn More
-                </a>
+                </Link>
               </div>
               ))}
             </div>
@@ -63,9 +64,9 @@ export default function Services() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               
-              <a href="/contact" className="block bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-secondary transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/contact" className="block bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-secondary transition-all transform hover:scale-105 shadow-lg">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="bg-primary py-12 sm:py-16 text-center relative overflow-hidden">
@@ -23,12 +25,12 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-            <button className="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+            <Link to="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
               Get Started
-            </button>
-            <button className="bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary  transition-all transform hover:scale-105 shadow-lg">
+            </Link>
+            <Link to="/services" className="block bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-white transition-all transform hover:scale-105 shadow-lg">
               Explore Services
-            </button>
+            </Link>
           </div>
         </div>
       </div>
