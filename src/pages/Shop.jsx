@@ -48,9 +48,11 @@ export default function Shop() {
                 <div className="text-center mb-3 sm:mb-4">
                   <span className="text-xl sm:text-2xl font-bold text-secondary">${i === 0 || i === 1 ? '60' : i === 2 ? '8.99' : '7.99'}</span>
                 </div>
-                <button className="w-full bg-secondary text-primary py-2 sm:py-3 px-3 sm:px-4 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105">
-                  Add to Order
-                </button>
+                <div className="flex justify-center">
+                  <button className="inline-flex items-center justify-center bg-secondary text-primary px-8 py-3 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105">
+                    Add to Order
+                  </button>
+                </div>
               </div>
             ))}
           </div>

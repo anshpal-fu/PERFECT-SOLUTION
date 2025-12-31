@@ -40,9 +40,11 @@ export default function Services() {
                 <div className="text-3xl sm:text-4xl font-extrabold text-primary mb-3 sm:mb-4">{i + 1}</div>
                 <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3 sm:mb-4 uppercase">{service}</h3>
                 <p className="text-gray-800 mb-3 sm:mb-4 font-medium flex-grow">Comprehensive service with education and support.</p>
-                <Link to="/contact" className="block w-full bg-secondary text-primary py-2 sm:py-3 px-4 sm:px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
-                  Learn More
-                </Link>
+                <div className="flex justify-center">
+                  <Link to="/contact" className="inline-flex items-center justify-center bg-secondary text-primary px-8 py-3 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                    Learn More
+                  </Link>
+                </div>
               </div>
               ))}
             </div>

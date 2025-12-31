@@ -53,8 +53,8 @@ export default function Home() {
                       <h3 className="text-2xl font-bold text-white mb-4 uppercase">{item}</h3>
                       <p className="text-white mb-4 font-medium">Comprehensive solution with education and support.</p>
                     </div>
-                    <div className="relative z-10">
-                      <Link to={item === "Kingdom Side Dishes" ? "/shop" : "/services"} className="block w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                    <div className="relative z-10 flex justify-center">
+                      <Link to={item === "Kingdom Side Dishes" ? "/shop" : "/services"} className="inline-flex items-center justify-center bg-secondary text-primary px-8 py-3 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                         Learn More
                       </Link>
                     </div>

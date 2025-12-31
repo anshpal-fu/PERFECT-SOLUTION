@@ -84,12 +84,14 @@ export default function Contact() {
                 ></textarea>
               </div>
               
-              <button
-                type="submit"
-                className="w-full bg-secondary text-primary py-3 sm:py-4 px-4 sm:px-6 rounded-xl font-bold uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg text-sm sm:text-base"
-              >
-                Send Message
-              </button>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center bg-secondary text-primary px-8 py-3 rounded-xl font-bold uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg text-sm sm:text-base"
+                >
+                  Send Message
+                </button>
+              </div>
             </form>
           </div>
           
@@ -169,7 +171,7 @@ export default function Contact() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               
-              <Link to="/services" className="block bg-white text-primary border-2 border-secondary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-white transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/services" className="inline-flex items-center justify-center bg-white text-primary border-2 border-secondary px-8 py-3 rounded-full font-bold text-lg uppercase hover:bg-secondary hover:text-white transition-all transform hover:scale-105 shadow-lg">
                 Explore Services
               </Link>
             </div>

@@ -80,10 +80,10 @@ export default function About() {
                         {item === "Growth" && "Fostering personal and professional development"}
                       </p>
                     </div>
-                    <div className="relative z-10">
-                      <a href="/contact" className="block w-full bg-secondary text-primary py-3 px-6 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
+                    <div className="relative z-10 flex justify-center">
+                      <Link to="/contact" className="inline-flex items-center justify-center bg-secondary text-primary px-8 py-3 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition">
                         Learn More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 ))
@@ -146,8 +146,8 @@ export default function About() {
               </div>
             </div>
             
-            <div className="text-center">
-              <Link to="/contact" className="block bg-secondary text-primary px-8 py-4 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
+            <div className="flex justify-center">
+              <Link to="/contact" className="inline-flex items-center justify-center bg-secondary text-primary px-8 py-3 rounded-full font-bold text-lg uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-lg">
                 View More
               </Link>
             </div>
