@@ -11,6 +11,7 @@ export default function Services() {
     "Car Wholesaling",
     "Junk & Bulk Removal",
     "Buy & Sell Property Services",
+    "Securities Bonding Service",
   ];
 
   return (
