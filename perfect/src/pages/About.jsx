@@ -133,8 +133,8 @@ export default function About() {
               <div className="rounded-2xl overflow-hidden  mb-6 sm:mb-0">
                 <div className="bg-white w-full h-40 sm:h-48 flex items-center justify-center text-gray-700 relative">
                   <img 
-                    src="/IMG_20251226_181042.jpg" 
-                    alt="Food Business" 
+                    src="/kindom.png" 
+                    alt="Kingdom Side Dishes" 
                     className="absolute inset-0 w-full h-full "
                   />
                   
