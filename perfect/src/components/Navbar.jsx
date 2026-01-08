@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="md:hidden flex items-center">
         <button 
           onClick={toggleMenu}
-          className="text-white focus:outline-none"
+          className="text-primary focus:outline-none p-2 rounded-lg hover:bg-secondary hover:text-white transition-colors"
           aria-label="Toggle menu"
         >
           <svg 
@@ -57,35 +57,35 @@ export default function Navbar() {
           <div className="flex flex-col space-y-4 font-bold">
             <Link 
               to="/" 
-              className={`hover:text-secondary transition-colors duration-300 ${location.pathname === '/' ? 'text-secondary' : ''}`}
+              className={`text-white hover:text-secondary transition-colors duration-300 ${location.pathname === '/' ? 'text-secondary' : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               to="/services" 
-              className={`hover:text-secondary transition-colors duration-300 ${location.pathname === '/services' ? 'text-secondary' : ''}`}
+              className={`text-white hover:text-secondary transition-colors duration-300 ${location.pathname === '/services' ? 'text-secondary' : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link 
               to="/shop" 
-              className={`hover:text-secondary transition-colors duration-300 ${location.pathname === '/shop' ? 'text-secondary' : ''}`}
+              className={`text-white hover:text-secondary transition-colors duration-300 ${location.pathname === '/shop' ? 'text-secondary' : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Shop
             </Link>
             <Link 
               to="/about" 
-              className={`hover:text-secondary transition-colors duration-300 ${location.pathname === '/about' ? 'text-secondary' : ''}`}
+              className={`text-white hover:text-secondary transition-colors duration-300 ${location.pathname === '/about' ? 'text-secondary' : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link 
               to="/contact" 
-              className={`hover:text-secondary transition-colors duration-300 ${location.pathname === '/contact' ? 'text-secondary' : ''}`}
+              className={`text-white hover:text-secondary transition-colors duration-300 ${location.pathname === '/contact' ? 'text-secondary' : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
