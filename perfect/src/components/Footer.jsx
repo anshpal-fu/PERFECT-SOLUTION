@@ -14,10 +14,10 @@ export default function Footer() {
 
             {/* LEFT COLUMN */}
             <div>
-              <h3 className="text-2xl font-extrabold text-secondary">
+              <h3 className="text-4xl font-extrabold text-secondary">
                 PERFECT SOLUTION
               </h3>
-              <p className="text-primary text-sm">
+              <p className="text-primary text-base mt-2">
                 Every Perfect Idea Comes with One Perfect Thought at a Time
               </p>
               
@@ -78,7 +78,7 @@ export default function Footer() {
               <img
                 src="/PS3-removebg-preview.png"
                 alt="Perfect Solution Logo"
-                className="h-60 w-65 p-4 rounded-xl "
+                className="h-80 w-96 p-4 rounded-xl "
               />
             </div>
 
