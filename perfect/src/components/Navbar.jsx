@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white text-primary px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg w-full border-b border-secondary">
       <Link to="/" className="flex items-center space-x-2">
-        <img src="/PS3-removebg-preview.png" alt="Perfect Solution Logo" className="h-30 w-35" />
+        <img src="/PS3-removebg-preview.png" alt="Perfect Solution Logo" className="h-24 w-24" />
         <h1 className="text-2xl font-extrabold text-secondary">PERFECT SOLUTION</h1>
       </Link>
 
