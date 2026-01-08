@@ -24,7 +24,7 @@ export default function Footer() {
               {/* Social Icons */}
               <div className="flex space-x-4 mt-4">
                 <a 
-                  href="https://www.linkedin.com/company/perfect-solution" 
+                  href="http://www.linkedin.com/in/larry-boyd-2a01a027" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:text-secondary transition-colors"
