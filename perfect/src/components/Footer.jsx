@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 gap-8 mb-6 items-start">
 
             {/* LEFT COLUMN */}
-            <div>
+            <div className="text-center md:text-left">
               <h3 className="text-4xl font-extrabold text-secondary">
                 PERFECT SOLUTION
               </h3>
@@ -22,7 +22,7 @@ export default function Footer() {
               </p>
               
               {/* Social Icons */}
-              <div className="flex space-x-4 mt-4">
+              <div className="flex space-x-4 mt-4 justify-center md:justify-start">
                 <a 
                   href="http://www.linkedin.com/in/larry-boyd-2a01a027" 
                   target="_blank" 
@@ -74,7 +74,7 @@ export default function Footer() {
             </div>
 
             {/* RIGHT COLUMN — LOGO FIXED */}
-            <div className="flex justify-end">
+            <div className="flex justify-center md:justify-center">
               <img
                 src="/PS3-removebg-preview.png"
                 alt="Perfect Solution Logo"
