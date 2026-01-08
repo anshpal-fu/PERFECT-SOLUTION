@@ -109,8 +109,25 @@ export default function Footer() {
               </button>
             </div>
 
-            <p className="mb-4">
+            <h4 className="text-lg font-bold text-primary mb-3">Terms & Conditions</h4>
+            <p className="mb-3">
               Welcome to Perfect Solution. These terms outline the rules for using our services.
+            </p>
+            <p className="mb-3">
+              By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement.
+            </p>
+            <p className="mb-3">
+              We reserve the right to update these terms at any time without prior notice.
+            </p>
+            <h4 className="text-lg font-bold text-primary mb-3 mt-4">Privacy Policy</h4>
+            <p className="mb-3">
+              We respect your privacy and are committed to protecting your personal information.
+            </p>
+            <p className="mb-3">
+              Any personal information collected will be used solely for the purpose of providing our services.
+            </p>
+            <p className="mb-3">
+              We do not share your information with third parties without your consent.
             </p>
 
             <div className="text-center mt-6">

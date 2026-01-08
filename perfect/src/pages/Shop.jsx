@@ -46,7 +46,7 @@ export default function Shop() {
                 <h3 className="text-lg sm:text-xl font-bold text-center text-primary mb-2 uppercase">{item}</h3>
                 <p className="text-gray-800 text-center text-xs sm:text-sm mb-3 sm:mb-4 flex-grow font-medium">Delicious and made with quality ingredients</p>
                 <div className="text-center mb-3 sm:mb-4">
-                  <span className="text-xl sm:text-2xl font-bold text-secondary">${i === 0 || i === 1 ? '60' : i === 2 ? '8.99' : '7.99'}</span>
+                  <span className="text-xl sm:text-2xl font-bold text-secondary">${i === 0 ? '60' : i === 1 ? '60' : i === 2 ? '55' : '55'}</span>
                 </div>
                 <div className="flex justify-center">
                   <button className="inline-flex items-center justify-center bg-secondary text-primary px-8 py-3 rounded-full font-bold uppercase hover:bg-white hover:text-primary transition-all transform hover:scale-105">
