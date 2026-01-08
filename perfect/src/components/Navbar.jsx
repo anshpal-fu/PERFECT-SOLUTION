@@ -12,8 +12,11 @@ export default function Navbar() {
   return (
     <nav className="bg-white text-primary px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg w-full border-b border-secondary">
       <Link to="/" className="flex items-center space-x-2">
-        <img src="/PS3-removebg-preview.png" alt="Perfect Solution Logo" className="h-24 w-24" />
-        <h1 className="text-2xl font-extrabold text-secondary">PERFECT SOLUTION</h1>
+        <img src="/PS3-removebg-preview - Edited.png" alt="Perfect Solution Logo" className="h-10 w-10" />
+        <div>
+          <h1 className="text-2xl font-extrabold text-secondary">PERFECT SOLUTION</h1>
+          <p className="text-xs font-medium text-secondary">Every Perfect Idea Comes with One Perfect Thought at a Time</p>
+        </div>
       </Link>
 
       {/* Desktop Navigation - Hidden on Mobile */}

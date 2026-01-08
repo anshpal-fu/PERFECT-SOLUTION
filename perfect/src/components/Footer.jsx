@@ -78,7 +78,7 @@ export default function Footer() {
               <img
                 src="/PS3-removebg-preview.png"
                 alt="Perfect Solution Logo"
-                className="h-80 w-96 p-4 rounded-xl "
+                className="h-70 w-70 p-4 rounded-xl "
               />
             </div>
 
